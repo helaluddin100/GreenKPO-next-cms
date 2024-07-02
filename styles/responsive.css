@@ -1,0 +1,323 @@
+@media screen and (max-width:1140px) {
+    /* .reporting-text h3 {
+        font-size: 16px;
+        line-height: 140%;
+    } */
+}
+
+@media screen and (max-width:1100px) {
+    .reporting-email a {
+        font-size: 18px;
+    }
+    .section-title-center {
+        padding: 0;
+    }
+    .faq-gov {
+        font-size: 55px !important;
+    }
+    .slider-content h2 {
+        font-size: 75px;
+    }
+    .slider-content p {
+        font-size: 20px;
+    }
+    .hero-content {
+        padding-top: 85px;
+    }
+    .democrati-content-title h2 {
+        font-size: 40px;
+    }
+    h4.sm-title {
+        font-size: 20px;
+    }
+    ul.democrati-ul {
+        padding-top: 15px;
+    }
+    ul.democrati-ul li {
+        margin-bottom: 0;
+        width: 85%;
+    }
+    ul.democrati-ul li p {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .democrati-wrapper {
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+    .section-title-left h2 {
+        font-size: 40px;
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+    .reporting-wrapper {
+        padding: 50px 0;
+    }
+    .reporting-card-area {
+        margin-top: 40px;
+    }
+    .carbon-section-second {
+        padding: 10px 0;
+    }
+    .section-title-center h2 {
+        font-size: 40px;
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+    .blog-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    a.post-title h3 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .carbon-left h2 {
+        font-size: 25px;
+    }
+    .democrati-img-alt img,
+    .democrati-img img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .latest-blog {
+        margin-top: 0;
+    }
+    .product-page-title-wrapper {
+        padding-top: 60px;
+        padding-bottom: 64px;
+    }
+    .product-page-title h1 {
+        font-size: 35px;
+        line-height: 120%;
+    }
+    .product-page-title h1 {
+        font-size: 35px;
+        line-height: 120%;
+    }
+    .plateform-content {
+        bottom: -58%;
+    }
+    .plateform-f-content {
+        height: 100px;
+    }
+    .plateform-content h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .blog-post-content h1 {
+        font-size: 35px;
+        line-height: 120%;
+    }
+    .blog-post-content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .post-view-area {
+        padding: 50px 0;
+    }
+    .carbon-btn {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .carbon-left {
+        text-align: center;
+    }
+    .slider-content h2 {
+        font-size: 50px;
+    }
+    .slider-content {
+        margin-bottom: initial;
+    }
+    ul.democrati-ul li {
+        width: 100%;
+    }
+    .carbon-content-wrapper {
+        padding: 56px 15px;
+    }
+    .blog-button {
+        justify-content: start;
+    }
+    .plateform-content {
+        bottom: -70%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .plateform-content {
+        bottom: -65%;
+    }
+    .hero-content {
+        padding-top: 30px;
+    }
+    .slider-content h2 {
+        font-size: 35px;
+    }
+    .team-wrapper {
+        margin-top: 30px;
+    }
+    .story-content h2 {
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .story-section {
+        margin-top: 25px;
+    }
+    .about-full-content h2 {
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .about-full-width-content {
+        margin-top: 0;
+    }
+    a.team-name {
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .team-section {
+        padding-top: 15px;
+        padding-bottom: 16px;
+    }
+    .about-main-content {
+        margin-top: 30px;
+    }
+    .product-page-title h1 {
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .product-page-title p {
+        font-size: 16px;
+    }
+    .free-gateway-card-area {
+        padding-top: 45px;
+    }
+    .faq-head {
+        padding: 50px 0;
+    }
+    .faq-title {
+        margin-bottom: 25px;
+    }
+    .faq-wrapper {
+        padding-bottom: 50px;
+    }
+    .faq-gov {
+        font-size: 30px !important;
+    }
+    .slider-content p {
+        font-size: 16px;
+    }
+    .contact-area-wrapper {
+        padding-top: 50px;
+    }
+    .contact-area {
+        margin-top: 35px;
+    }
+    .py-56 {
+        padding: 40px 0;
+    }
+    .mobile-slider-img {
+        display: block;
+    }
+    .desktop-slider-img {
+        display: none;
+    }
+    .hero-slider-border {
+        border: 4px solid #000;
+        border-radius: 14px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        -ms-border-radius: 14px;
+        -o-border-radius: 14px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .blog-post-content h1 {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .post-publish-tag {
+        display: none;
+    }
+    .last-post-title {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    .last-blog-content p {
+        font-size: 14px;
+    }
+    .hero-slider-wrapper {
+        padding-top: 50px;
+    }
+    .slider-content p {
+        font-size: 14px;
+    }
+    .slider-content h2 {
+        font-size: 25px;
+    }
+    .democrati {
+        padding-top: 50px;
+    }
+    .democrati-content-title h2 {
+        font-size: 25px;
+    }
+    h4.sm-title {
+        font-size: 17px;
+    }
+    .democrati-wrapper {
+        padding-top: 65px;
+        padding-bottom: 20px;
+    }
+    .section-title-left h2 {
+        font-size: 25px;
+    }
+    .reporting-wrapper {
+        padding: 25px 0;
+    }
+    .carbon-section {
+        margin: 30px 0;
+    }
+    .reporting-slider {
+        padding: 40px 0 !important;
+    }
+    .reporting-card-area {
+        margin-top: 0;
+    }
+    .section-title-center h2 {
+        font-size: 25px;
+    }
+    .blog-section {
+        padding-bottom: 0;
+    }
+    .custom-btn {
+        padding: 10px 22px;
+    }
+    .pmt-20 {
+        padding-top: 20px;
+    }
+    .plateform-content {
+        bottom: -60%;
+    }
+    .product-page-title-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .py-56 {
+        padding: 35px 0;
+    }
+    .faq-gov {
+        font-size: 22px !important;
+    }
+    .contact-info-card {
+        margin-bottom: 30px;
+    }
+    .post-full-content-inner h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+    /*========== Colors ==========*/
+    --main-color: #3BCBBE;
+    --hover-color: rgb(141 54 233);
+    --second-color: #006666;
+    --text-main-color: rgba(51, 204, 153, 1);
+    --kpr-gray: rgba(71, 84, 103, 1);
+    --black-color: #000000;
+    --title-color: #011515;
+    --white-color: #ffffff;
+    --body-color: #415571;
+    --letter-spacing: -0.48px;
+    /* --main-gradient: linear-gradient(180deg, #5740f9 0%, #8732e0 100%); */
+    /*========== Font and typography ==========*/
+    --body-font: "Syne", sans-serif;
+    --popins-font: "Poppins", sans-serif;
+    --sec-title-font: 56px;
+    --m-title: 48px;
+    --p-font: 20px;
+    --l-title: 112px;
+    --p-font-height: 30px;
+    --lp-font-height: 50px;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== Margin ==========*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (max-width: 1200px) {
+     :root {
+        --p-font: 16px;
+        --sec-title-font: 45px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+     :root {
+        --l-title: 35px;
+        --m-title: 24px;
+        --p-font: 14px;
+        --sec-title-font: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+     :root {
+        --l-title: 25px;
+        --m-title: 20px;
+        --sec-title-font: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+     :root {
+        --l-title: 25px;
+        --m-title: 20px;
+        --sec-title-font: 25px;
+    }
+}
+
+
+/* ==================CSS Variable END========= */
+
+
+/*========== BASE ==========*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EFF3FB !important;
+    color: #415571;
+    font-size: var(--p-font);
+    font-weight: 400;
+    font-family: var(--body-font) !important;
+    line-height: var(--p-font-height);
+    overflow-x: hidden !important;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+img {
+    vertical-align: middle;
+    height: auto;
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1280px !important;
+    margin: auto;
+    padding: 0 10px;
+}
+
+
+/* ============================GENERAL STYLE END======= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.48px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+span,
+label {
+    margin: 0;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+table.table {
+    white-space: nowrap;
+}
+
+
+/* ===================custom button============ */
+
+.custom-btn {
+    line-height: 28px;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 16px 22px;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.custom-btn:hover {
+    color: var(--white-color);
+    background: rgb(141 54 233);
+}
+
+.main-custom-btn-alt {
+    display: flex;
+    padding: 12px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--Base-White, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #006666;
+    transition: .3s;
+}
+
+.main-custom-btn-alt:hover {
+    color: var(--text-color);
+}
+
+.main-custom-btn {
+    display: flex;
+    padding: 12px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #006666;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fff;
+    transition: .3s;
+}
+
+.main-custom-btn:hover {
+    color: var(--white-color);
+    background: rgb(141 54 233);
+}
+
+
+/* ===============custom button alt=============== */
+
+.btn:focus {
+    outline: 0px;
+    box-shadow: none;
+}
+
+
+/* =============padding margin className============= */
+
+.me-3 {
+    margin-right: 30px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.cmb-6 {
+    margin-bottom: 100px;
+}
+
+.cpy-5 {
+    padding: 50px 0;
+}
+
+.cpy-8 {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.cpy-6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cpt-6 {
+    padding-top: 100px;
+}
+
+.cpb-6 {
+    padding-bottom: 100px;
+}
+
+.cpt-7 {
+    padding-top: 80px;
+}
+
+.cpb-7 {
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 992px) {
+    .cpy-5 {
+        padding: 40px 0;
+    }
+    .cpy-8 {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    .cpy-6 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .cpt-6 {
+        padding-top: 80px;
+    }
+    .cpb-6 {
+        padding-bottom: 80px;
+    }
+    .cpt-7 {
+        padding-top: 60px;
+    }
+    .cpb-7 {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cpy-5 {
+        padding: 30px 0;
+    }
+    .cpy-8 {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .cpy-6 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .cpt-6 {
+        padding-top: 60px;
+    }
+    .cpb-6 {
+        padding-bottom: 60px;
+    }
+    .cpt-7 {
+        padding-top: 40px;
+    }
+    .cpb-7 {
+        padding-bottom: 40px;
+    }
+}
