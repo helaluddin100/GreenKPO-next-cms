@@ -32,7 +32,10 @@ function Faq() {
               <div className="row justify-content-center">
                 <div className="col-md-7">
                   <div className="section-title-left text-center">
-                    <h4> FAQs </h4> <h2> Frequently asked questions </h2>
+                    <img src="/favicon.svg" alt="" className="page-head-img" />
+
+                    <h4> FAQs </h4>
+                    <h2> Frequently asked questions </h2>
                     <p> Have questions ? We’ re here to help. </p>
                   </div>
                   <div className="search-box-wrapper">

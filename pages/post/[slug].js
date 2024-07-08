@@ -98,6 +98,8 @@ function PostView() {
                     data-aos="fade-up"
                     data-aos-duration="1000"
                   >
+                    <img src="/favicon.svg" alt="" className="page-head-img" />
+
                     <h4>
                       Published{" "}
                       {new Date(postData.created_at).toLocaleDateString(

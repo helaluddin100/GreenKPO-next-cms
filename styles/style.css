@@ -714,7 +714,7 @@ ul.post-tag-ul li {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: -0.32px;
-    color: var(--second-color);
+    color: var(--title-color);
     font-family: var(--popins-font);
     padding-bottom: 10px;
 }
@@ -724,7 +724,7 @@ ul.post-tag-ul li {
     font-weight: 700;
     line-height: 64px;
     letter-spacing: -0.96px;
-    color: var(--title-color);
+    color: var(--second-color);
     padding-bottom: 20px;
 }
 
@@ -838,7 +838,7 @@ a.share-link:hover {
 }
 
 .faq-title {
-    color: var(--title-color);
+    color: var(--second-color);
     text-align: center;
     font-size: 32px;
     font-weight: 600;
@@ -889,7 +889,7 @@ a.share-link:hover {
 }
 
 .contact-info-card h4 {
-    color: var(--Gray-900, #101828);
+    color:var(--main-color);
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -949,13 +949,15 @@ label {
 /* ======================product page =================== */
 
 .product-page-title h1 {
-    color: var(--title-color);
+    color: var(--second-color);
     font-size: 48px;
     font-weight: 600;
     line-height: 64px;
     letter-spacing: -0.96px;
 }
-
+.product-page-title {
+    text-align: center;
+}
 .product-page-title-wrapper {
     padding-top: 96px;
     padding-bottom: 64px;
@@ -969,7 +971,7 @@ label {
 }
 
 .product-title a {
-    color: var(--Gray-900, #101828);
+    color:var(--second-color);
     font-size: 24px;
     font-weight: 700;
     padding: 16px;
@@ -984,7 +986,7 @@ label {
 }
 
 .product-title a:hover {
-    color: var(--second-color);
+    color: var(--main-color);
 }
 
 .product-card {
@@ -1179,23 +1181,27 @@ ul.product-details-list {
 }
 
 .post-full-content-inner h2 {
-    color: var(--KPO-Black, #011515);
+    color: var(--second-color);
     font-size: 28px;
     font-weight: 700;
 }
 
 .post-full-content-inner h3 {
-    color: var(--KPO-Black, #011515);
+    color: var(--second-color);
     font-size: 25px;
     font-weight: 700;
 }
 
 .post-full-content-inner blockquote {
-    color: var(--Gray-900, #101828);
+    color:var(--second-color);
     font-size: 24px;
     font-weight: 500;
     border-left: 3px solid var(--main-color);
     padding-left: 20px;
+    line-height: 120%;
+}
+.post-full-content-inner blockquote p {
+    line-height: 150%;
 }
 
 .post-full-content-inner blockquote h3 {

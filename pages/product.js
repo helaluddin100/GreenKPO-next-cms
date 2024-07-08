@@ -14,20 +14,21 @@ function Product() {
   const { data, error } = useSWR(`${baseuri}/api/products`, fetcher);
 
   if (error) return <div>Failed to load products</div>;
-  if (!data) return (
-    <div className="preloader d-flex align-items-center justify-content-center vh-100">
-      <div className="preloader-inner position-relative">
-        <div className="text-center">
-          <img
-            className="mb-10"
-            src="/assets/img/spinner.svg"
-            alt="Green KPO"
-          />
-          <div className="preloader-dots"></div>
+  if (!data)
+    return (
+      <div className="preloader d-flex align-items-center justify-content-center vh-100">
+        <div className="preloader-inner position-relative">
+          <div className="text-center">
+            <img
+              className="mb-10"
+              src="/assets/img/spinner.svg"
+              alt="Green KPO"
+            />
+            <div className="preloader-dots"></div>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
 
   return (
     <div>
@@ -39,21 +40,40 @@ function Product() {
         <section>
           <div className="product-page-title-wrapper">
             <div className="container">
-              <div className="row">
+              <div className="row justify-content-center">
                 <div className="col-md-9">
-                  <div className="product-page-title" data-aos="fade-up" data-aos-duration="1000">
-                    <h1>GreenKPO Lite, your FREE gateway to the world of Carbon Accounting</h1>
-                    <p>Our process flow simplified especially for SMEs in the following chart</p>
+                  <div
+                    className="product-page-title"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    <img src="/favicon.svg" alt="" className="page-head-img" />
+
+                    <h1>
+                      GreenKPO Lite, your FREE gateway to the world of Carbon
+                      Accounting
+                    </h1>
+                    <p>
+                      Our process flow simplified especially for SMEs in the
+                      following chart
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="free-gateway-card-area" data-aos="fade-up" data-aos-duration="1500">
+              <div
+                className="free-gateway-card-area"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div className="row">
                   {data.map((product) => (
                     <div className="col-xl-3 col-md-6 mb-4" key={product.id}>
                       <div className="product-card">
                         <div className="product-card-img">
-                          <img src={`${baseuri}/${product.image}`} alt={product.name} />
+                          <img
+                            src={`${baseuri}/${product.image}`}
+                            alt={product.name}
+                          />
                         </div>
                         <div className="margin-border-wrap-small">
                           <div className="product-title">
@@ -64,15 +84,23 @@ function Product() {
                           <div className="product-facility-list">
                             {product.feature_list && (
                               <ul className="product-facility-ul">
-                                {JSON.parse(product.feature_list).map((feature, index) => (
-                                  <li key={index}>
-                                    <div className="right-mark-area">
-                                      <img src="/assets/img/icon/mark.svg" alt="" />
-                                      <p>{feature}</p>
-                                    </div>
-                                    <img src="/assets/img/icon/chevron-right-double.svg" alt="image not found" />
-                                  </li>
-                                ))}
+                                {JSON.parse(product.feature_list).map(
+                                  (feature, index) => (
+                                    <li key={index}>
+                                      <div className="right-mark-area">
+                                        <img
+                                          src="/assets/img/icon/mark.svg"
+                                          alt=""
+                                        />
+                                        <p>{feature}</p>
+                                      </div>
+                                      <img
+                                        src="/assets/img/icon/chevron-right-double.svg"
+                                        alt="image not found"
+                                      />
+                                    </li>
+                                  )
+                                )}
                               </ul>
                             )}
                           </div>
