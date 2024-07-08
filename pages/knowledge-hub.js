@@ -67,9 +67,11 @@ function KnowledgeHub() {
             data-aos-duration="1000"
           >
             <div className="container">
-              <div className="row">
+              <div className="row justify-content-center">
                 <div className="col-md-8">
-                  <div className="section-title-left py-56">
+                  <div className="section-title-center py-56">
+                    <img src="/favicon.svg" alt="" className="page-head-img" />
+
                     <h4>Our blog</h4>
                     <h2>Resources and insights</h2>
                     <p>
@@ -211,7 +213,7 @@ function KnowledgeHub() {
                             >
                               <path
                                 d="M7 17L17 7M17 7H7M17 7V17"
-                                stroke="#101828"
+                                stroke="#006666"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"

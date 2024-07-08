@@ -401,7 +401,7 @@ a.post-title {
     display: grid;
     grid-template-columns: 85% 10%;
     gap: 5%;
-    color: var(--KPO-Black, #011515);
+    color: var(--second-color);
     font-family: var(--body-font);
     margin: 8px 0;
     transition: .3s;
