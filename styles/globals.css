@@ -195,7 +195,7 @@ table.table {
 
 .custom-btn:hover {
     color: var(--white-color);
-    background: rgb(141 54 233);
+    background: var(--second-color);
 }
 
 .main-custom-btn-alt {
@@ -233,8 +233,8 @@ table.table {
 }
 
 .main-custom-btn:hover {
-    color: var(--white-color);
-    background: rgb(141 54 233);
+    color: var(--second-color);
+    background: var(--white-color);
 }
 
 

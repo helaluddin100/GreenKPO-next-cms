@@ -42,7 +42,7 @@ function PostView() {
         <meta property="og:image" content="assets/img/meta/1.jpg" />
         <meta property="image" content="assets/img/meta/1.jpg" />
         <meta name="keywords" content="Green KPO"></meta>
-        <link rel="icon" type="image" href="/favicon.png"></link>
+        <link rel="icon" type="image" href="/favicon.svg"></link>
       </Head>
 
       {/* Post View */}

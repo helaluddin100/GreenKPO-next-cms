@@ -2,6 +2,7 @@ import React from "react";
 import AppLayout from "../component/Layout/Layout";
 import Head from "next/head";
 import Carbon from "./components/carbon";
+import AboutSlider from "./components/AboutSlider";
 function About() {
   return (
     <>
@@ -19,23 +20,24 @@ function About() {
         <meta property="og:image" content="assets/img/meta/1.jpg" />
         <meta property="image" content="assets/img/meta/1.jpg" />
         <meta name="keywords" content="Green KPO Next.js website"></meta>
-        <link rel="icon" type="image" href="/favicon.png"></link>
+        <link rel="icon" type="image" href="/favicon.svg"></link>
       </Head>
       <div className="about-page-wrapper">
         <div className="container">
-          <div className="row">
-            <div className="col-md-8">
+          <div className="row justify-content-center">
+            <div className="col-md-9">
               <div
-                className="section-title-left"
+                className="section-title-center"
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
+                <img src="/favicon.svg" alt="" className="page-head-img" />
                 <h4>Why we’re different</h4>
-                <h2>Why do we need to democratise Carbon Accounting?</h2>
+                <h2>Why do we need to <br /> democratise Carbon Accounting?</h2>
                 <p>
                   With more and more countries making Carbon scores mandatory
-                  for <br /> businesses of all sizes, it's critical to have a
-                  platform that's made for <br /> everyone.
+                  for  businesses of all sizes, it's critical to have a
+                  platform that's made for everyone.
                 </p>
               </div>
             </div>
@@ -43,61 +45,29 @@ function About() {
 
           <div className="about-main-content">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-12">
                 <div
                   className="about-content"
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-duration="1000"
                 >
                   <p>
-                    Carbon accounting quantifies the climate impact of an
-                    organization’s business.
+                  Carbon accounting quantifies the climate impact of an organization’s business.  Carbon accounting is essential for businesses to understand their environmental impact, meet reporting requirements, and identify opportunities for carbon reduction. These capabilities lay the foundation for the various business benefits. Many businesses are already required to disclose their carbon emissions – and legislative requirements are continuously increasing. Regulations like the Corporate Sustainability Reporting Directive (CSRD) in the EU and Streamlined Energy and Carbon Reporting (SECR) in the UK mandate emissions reporting for businesses of various sizes and across various sectors. This makes comprehensive carbon accounting a compliance necessity for businesses.
                   </p>
                   <p>
-                    Carbon accounting is essential for businesses to understand
-                    their environmental impact, meet reporting requirements, and
-                    identify opportunities for carbon reduction. These
-                    capabilities lay the foundation for the various business
-                    benefits.
+                  However, there are benefits beyond just compliance for businesses to start their carbon accounting journey; like minimising risks, reducing inefficiency and building brand equity.
                   </p>
-                  <p>
-                    Many businesses are already required to disclose their
-                    carbon emissions – and legislative requirements are
-                    continuously increasing. Regulations like the Corporate
-                    Sustainability Reporting Directive (CSRD) in the EU and
-                    Streamlined Energy and Carbon Reporting (SECR) in the UK
-                    mandate emissions reporting for businesses of various sizes
-                    and across various sectors. This makes comprehensive carbon
-                    accounting a compliance necessity for businesses.
-                  </p>
-                  <p>
-                    However, there are benefits beyond just compliance for
-                    businesses to start their carbon accounting journey; like
-                    minimising risks, reducing inefficiency and building brand
-                    equity.
-                  </p>
-                  <p>
-                    • 77% of consumers say it’s at least moderately important
-                    that brands are sustainable and environmentally responsible.
-                  </p>
-                  <p>
-                    • 2 in 3 employees are more likely to work for a company
-                    with strong environmental policies.
-                  </p>
-                  <p>
-                    • Investors will pay a 10% premium for a company with a
-                    positive ESG record.
-                  </p>
+                 
                 </div>
               </div>
 
-              <div className="col-md-6">
+              <div className="col-md-12">
                 <div
                   className="about-image"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                 >
-                  <img src="assets/img/inner/about.png" alt="Image not found" />
+                 <AboutSlider />
                 </div>
               </div>
             </div>

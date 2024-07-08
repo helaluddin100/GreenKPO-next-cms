@@ -68,7 +68,7 @@ function ProductDetails() {
                 <meta property="og:image" content={`${baseuri}/${productData.image}`} />
                 <meta property="image" content={`${baseuri}/${productData.image}`} />
                 <meta name="keywords" content={productData.meta_keyword}></meta>
-                <link rel="icon" type="image" href="/favicon.png"></link>
+                <link rel="icon" type="image" href="/favicon.svg"></link>
             </Head>
 
             <div className="product-details-wrapper">

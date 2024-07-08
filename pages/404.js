@@ -24,7 +24,7 @@ function Error() {
           name='keywords'
           content='nft, full stack, web development, website, website design , website development,development, nft constructer, minting website'
         ></meta>
-        <link rel='icon' type='image' href='/favicon.png'></link>
+        <link rel='icon' type='image' href='/favicon.svg'></link>
       </Head>
 
       <noscript>

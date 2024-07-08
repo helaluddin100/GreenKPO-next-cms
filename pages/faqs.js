@@ -23,7 +23,7 @@ function Faq() {
         <meta property="og:image" content="assets/img/meta/1.jpg" />
         <meta property="image" content="assets/img/meta/1.jpg" />
         <meta name="keywords" content="Green KPO Next.js website"></meta>
-        <link rel="icon" type="image" href="/favicon.png"></link>
+        <link rel="icon" type="image" href="/favicon.svg"></link>
       </Head>
       <div className="faq-wrapper">
         <section>

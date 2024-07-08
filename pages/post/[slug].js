@@ -83,7 +83,7 @@ function PostView() {
         <meta property="og:image" content={`${baseuri}/${postData.image}`} />
         <meta property="image" content={`${baseuri}/${postData.image}`} />
         <meta name="keywords" content={postData.meta_keywords}></meta>
-        <link rel="icon" type="image" href="/favicon.png"></link>
+        <link rel="icon" type="image" href="/favicon.svg"></link>
       </Head>
 
       {/* Post View */}

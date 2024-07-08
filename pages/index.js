@@ -25,7 +25,7 @@ function Home() {
         <meta property="og:image" content="assets/img/meta/1.jpg" />
         <meta property="image" content="assets/img/meta/1.jpg" />
         <meta name="keywords" content="Green KPO Next.js website"></meta>
-        <link rel="icon" type="image" href="/favicon.png"></link>
+        <link rel="icon" type="image" href="/favicon.svg"></link>
       </Head>
 
       <div>
@@ -35,9 +35,10 @@ function Home() {
               <div className="row">
                 <div className="col-md-12">
                   <div className="hero-content">
+                    <img src="/favicon.svg" alt="" className="hero-icon" />
                     <h1 data-aos="fade-up" data-aos-duration="1000">
-                      Democratising Carbon Accounting <br /> One Business{" "}
-                      <a href="">At A Time</a>
+                      Democratising Carbon Accounting <br /> <a href="#"> One Business
+                      At A Time</a>
                     </h1>
                     <p data-aos="fade-up" data-aos-duration="1500">
                       Carbon Accounting is easy, it's meant for businesses of

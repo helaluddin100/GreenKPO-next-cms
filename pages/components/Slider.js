@@ -14,7 +14,7 @@ function Slider() {
   if (error) return <div>Failed to load posts</div>;
   if (!data)
     return (
-      <div className="preloader d-flex align-items-center justify-content-center vh-100">
+      <div className="preloader d-flex align-items-center justify-content-center ">
         <div className="preloader-inner position-relative">
           <div className="text-center">
             <img
@@ -32,8 +32,8 @@ function Slider() {
     <div>
       <div
         className="hero-slider-wrapper"
-        data-aos="fade-up"
-        data-aos-duration="2000"
+        // data-aos="fade-up"
+        // data-aos-duration="2000"
       >
         <div className="row">
           <div className="col-md-12">
