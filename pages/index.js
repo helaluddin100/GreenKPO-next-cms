@@ -1,5 +1,6 @@
-import React from "react";
+import { useState } from "react";
 import Link from "next/link";
+import CustomModal from "./components/CustomModal";
 import AppLayout from "../component/Layout/Layout";
 import Head from "next/head";
 import Carbon from "./components/carbon";
@@ -14,6 +15,12 @@ const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 function Home() {
   const baseuri = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+  //model
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
 
   const { data, error } = useSWR(`${baseuri}/api/settings`, fetcher);
 
@@ -82,10 +89,17 @@ function Home() {
                         <span>Watch Demo</span>
                       </button> */}
 
-                      <a href="#" className="custom-btn">
+                      <a href="#" className="custom-btn" onClick={handleShow}>
                         <i className="fa-regular fa-circle-play"></i>{" "}
                         <span>Watch Demo</span>
                       </a>
+
+                      <CustomModal
+                        show={showModal}
+                        handleClose={handleClose}
+                        // title="Home Video"
+                        body={settings.home_video}
+                      />
                     </div>
                   </div>
                 </div>

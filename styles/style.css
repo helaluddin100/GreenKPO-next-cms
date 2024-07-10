@@ -1251,3 +1251,25 @@ ul.product-details-list {
     background-repeat: repeat;
     background-size: cover;
 }
+
+
+.btn-close.model-close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    color: #000;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body iframe {
+    width: 100% !important;
+    height: 450px !important;
+}
