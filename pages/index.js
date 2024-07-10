@@ -8,7 +8,35 @@ import "swiper/swiper-bundle.min.css"; // Import Swiper styles
 import { Autoplay, Pagination, Navigation } from "swiper";
 import LatestPost from "./components/LatestPost";
 import Slider from "./components/Slider";
+import useSWR from "swr";
+import axios from "axios";
+const fetcher = (url) => axios.get(url).then((res) => res.data);
+
 function Home() {
+  const baseuri = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+  const { data, error } = useSWR(`${baseuri}/api/settings`, fetcher);
+
+  if (error) return <div>Error loading data</div>;
+  if (!data)
+    return (
+      <div>
+        <div className="preloader d-flex align-items-center justify-content-center vh-100">
+          <div className="preloader-inner position-relative">
+            <div className="text-center">
+              <img
+                className="mb-10"
+                src="/assets/img/spinner.svg"
+                alt="Loading..."
+              />
+              <div className="preloader-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
+  const { settings } = data;
   return (
     <>
       <Head>
@@ -37,14 +65,11 @@ function Home() {
                   <div className="hero-content">
                     <img src="/favicon.svg" alt="" className="hero-icon" />
                     <h1 data-aos="fade-up" data-aos-duration="1000">
-                      Democratising Carbon Accounting <br /> <a href="#"> One Business
-                        At A Time</a>
+                      {settings.banner_title_a} <br />{" "}
+                      <a href="#"> {settings.banner_title_b}</a>
                     </h1>
                     <p data-aos="fade-up" data-aos-duration="1500">
-                      Carbon Accounting is easy, it's meant for businesses of
-                      all sizes and with GreenKPO it takes only a few steps to
-                      understand how to assess, manage and take action about
-                      your business's Carbon emission.
+                      {settings.banner_description}
                     </p>
 
                     <div
@@ -161,7 +186,7 @@ function Home() {
                       data-aos="fade-left"
                       data-aos-duration="1000"
                     >
-                      <img src="assets/img/inner/democrati.png" alt="" />
+                      <img src={`${baseuri}/${settings.right_image}`} alt="" />
                     </div>
                   </div>
                 </div>
@@ -177,7 +202,7 @@ function Home() {
                       data-aos="fade-right"
                       data-aos-duration="1000"
                     >
-                      <img src="assets/img/inner/business.png" alt="" />
+                      <img src={`${baseuri}/${settings.left_image}`} alt="" />
                     </div>
                   </div>
                   <div className="col-lg-8">
@@ -420,15 +445,16 @@ function Home() {
                   <div className="col-md-12 col-lg-10">
                     <div className="section-title-center">
                       <h2>
-                        Why Carbon accounting and reduction should be top on your
-                        business priority list?
+                        Why Carbon accounting and reduction should be top on
+                        your business priority list?
                       </h2>
                       <p>
                         Carbon Accounting is not the future, it's the present.
                         More and more governments are making it mandatory for
                         businesses of any size. Some governments are also
-                        encouraging Carbon accounting by incentivising businesses
-                        that take up the journey. You shouldn't be left behind!
+                        encouraging Carbon accounting by incentivising
+                        businesses that take up the journey. You shouldn't be
+                        left behind!
                       </p>
                     </div>
                   </div>
