@@ -38,7 +38,7 @@ function Home() {
                     <img src="/favicon.svg" alt="" className="hero-icon" />
                     <h1 data-aos="fade-up" data-aos-duration="1000">
                       Democratising Carbon Accounting <br /> <a href="#"> One Business
-                      At A Time</a>
+                        At A Time</a>
                     </h1>
                     <p data-aos="fade-up" data-aos-duration="1500">
                       Carbon Accounting is easy, it's meant for businesses of
@@ -264,182 +264,184 @@ function Home() {
 
         {/* Democrati end  */}
 
-        <Carbon />
+        <div className="bg-wrapper-a">
+          <Carbon />
 
-        {/* Reporting section start */}
-        <section>
-          <div className="reporting-wrapper">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-7 col-md-10">
-                  <div className="section-title-left">
-                    <h2>
-                      Reporting is only the first step in your Carbon neutral
-                      goals
-                    </h2>
-                    <p>Our friendly team is always here to chat.</p>
+          {/* Reporting section start */}
+          <section>
+            <div className="reporting-wrapper">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-7 col-md-10">
+                    <div className="section-title-left">
+                      <h2>
+                        Reporting is only the first step in your Carbon neutral
+                        goals
+                      </h2>
+                      <p>Our friendly team is always here to chat.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="reporting-card-area">
-                <Swiper
-                  slidesPerView={1}
-                  spaceBetween={10}
-                  breakpoints={{
-                    640: {
-                      slidesPerView: 2,
-                      spaceBetween: 20,
-                    },
-                    768: {
-                      slidesPerView: 3,
-                      spaceBetween: 20,
-                    },
-                    1024: {
-                      slidesPerView: 4,
-                      spaceBetween: 20,
-                    },
-                  }}
-                  modules={[Autoplay, Pagination, Navigation]}
-                  className="mySwiper reporting-slider"
-                >
-                  <SwiperSlide>
-                    <div
-                      className="reporting-card"
-                      data-aos="fade-up"
-                      data-aos-duration="800"
-                    >
-                      <div className="reporting-card-content">
-                        <div className="reporting-icon">
-                          <img
-                            src="assets/img/icon/message.svg"
-                            alt="Image not found"
-                          />
-                        </div>
-                        <div className="reporting-text">
-                          <h3>Easy Reporting for Compliance</h3>
-                        </div>
+                <div className="reporting-card-area">
+                  <Swiper
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    breakpoints={{
+                      640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                      },
+                      1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                      },
+                    }}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper reporting-slider"
+                  >
+                    <SwiperSlide>
+                      <div
+                        className="reporting-card"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                      >
+                        <div className="reporting-card-content">
+                          <div className="reporting-icon">
+                            <img
+                              src="assets/img/icon/message.svg"
+                              alt="Image not found"
+                            />
+                          </div>
+                          <div className="reporting-text">
+                            <h3>Easy Reporting for Compliance</h3>
+                          </div>
 
-                        <div className="reporting-email">
-                          <a href="" class="main-custom-btn">
-                            <span>Click to Connect</span>
-                          </a>
+                          <div className="reporting-email">
+                            <a href="" class="main-custom-btn">
+                              <span>Click to Connect</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className="reporting-card"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                    >
-                      <div className="reporting-card-content">
-                        <div className="reporting-icon">
-                          <img
-                            src="assets/img/icon/message.svg"
-                            alt="Image not found"
-                          />
-                        </div>
-                        <div className="reporting-text">
-                          <h3>AI Based Reduction Insights & Strategies</h3>
-                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div
+                        className="reporting-card"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div className="reporting-card-content">
+                          <div className="reporting-icon">
+                            <img
+                              src="assets/img/icon/message.svg"
+                              alt="Image not found"
+                            />
+                          </div>
+                          <div className="reporting-text">
+                            <h3>AI Based Reduction Insights & Strategies</h3>
+                          </div>
 
-                        <div className="reporting-email">
-                          <a href="" class="main-custom-btn">
-                            <span>Click to Connect</span>
-                          </a>
+                          <div className="reporting-email">
+                            <a href="" class="main-custom-btn">
+                              <span>Click to Connect</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className="reporting-card"
-                      data-aos="fade-up"
-                      data-aos-duration="1200"
-                    >
-                      <div className="reporting-card-content">
-                        <div className="reporting-icon">
-                          <img
-                            src="assets/img/icon/message.svg"
-                            alt="Image not found"
-                          />
-                        </div>
-                        <div className="reporting-text">
-                          <h3>Integrate Scope 1, 2 & 3</h3>
-                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div
+                        className="reporting-card"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <div className="reporting-card-content">
+                          <div className="reporting-icon">
+                            <img
+                              src="assets/img/icon/message.svg"
+                              alt="Image not found"
+                            />
+                          </div>
+                          <div className="reporting-text">
+                            <h3>Integrate Scope 1, 2 & 3</h3>
+                          </div>
 
-                        <div className="reporting-email">
-                          <a href="" class="main-custom-btn">
-                            <span>Click to Connect</span>
-                          </a>
+                          <div className="reporting-email">
+                            <a href="" class="main-custom-btn">
+                              <span>Click to Connect</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className="reporting-card"
-                      data-aos="fade-up"
-                      data-aos-duration="1400"
-                    >
-                      <div className="reporting-card-content">
-                        <div className="reporting-icon">
-                          <img
-                            src="assets/img/icon/message.svg"
-                            alt="Image not found"
-                          />
-                        </div>
-                        <div className="reporting-text">
-                          <h3>Real-Time Dashboard & Tracking</h3>
-                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div
+                        className="reporting-card"
+                        data-aos="fade-up"
+                        data-aos-duration="1400"
+                      >
+                        <div className="reporting-card-content">
+                          <div className="reporting-icon">
+                            <img
+                              src="assets/img/icon/message.svg"
+                              alt="Image not found"
+                            />
+                          </div>
+                          <div className="reporting-text">
+                            <h3>Real-Time Dashboard & Tracking</h3>
+                          </div>
 
-                        <div className="reporting-email">
-                          <a href="" class="main-custom-btn">
-                            <span>Click to Connect</span>
-                          </a>
+                          <div className="reporting-email">
+                            <a href="" class="main-custom-btn">
+                              <span>Click to Connect</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Reporting section start end */}
-
-        {/* Carbon accounting start */}
-        <section>
-          <div className="carbon-section-second">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-12 col-lg-10">
-                  <div className="section-title-center">
-                    <h2>
-                      Why Carbon accounting and reduction should be top on your
-                      business priority list?
-                    </h2>
-                    <p>
-                      Carbon Accounting is not the future, it's the present.
-                      More and more governments are making it mandatory for
-                      businesses of any size. Some governments are also
-                      encouraging Carbon accounting by incentivising businesses
-                      that take up the journey. You shouldn't be left behind!
-                    </p>
-                  </div>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <Carbon />
+          {/* Reporting section start end */}
 
-        {/* Blog section */}
-        <LatestPost />
+          {/* Carbon accounting start */}
+          <section>
+            <div className="carbon-section-second">
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-md-12 col-lg-10">
+                    <div className="section-title-center">
+                      <h2>
+                        Why Carbon accounting and reduction should be top on your
+                        business priority list?
+                      </h2>
+                      <p>
+                        Carbon Accounting is not the future, it's the present.
+                        More and more governments are making it mandatory for
+                        businesses of any size. Some governments are also
+                        encouraging Carbon accounting by incentivising businesses
+                        that take up the journey. You shouldn't be left behind!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <Carbon />
+
+          {/* Blog section */}
+          <LatestPost />
+        </div>
       </div>
     </>
   );

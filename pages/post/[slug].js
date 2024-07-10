@@ -87,123 +87,126 @@ function PostView() {
       </Head>
 
       {/* Post View */}
-      <div className="post-view-area">
-        <section>
-          <div className="post-top-area">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-9">
-                  <div
-                    className="blog-post-content"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    <img src="/favicon.svg" alt="" className="page-head-img" />
-
-                    <h4>
-                      Published{" "}
-                      {new Date(postData.created_at).toLocaleDateString(
-                        "en-US",
-                        {
-                          day: "numeric",
-                          month: "long",
-                          year: "numeric",
-                        }
-                      )}
-                    </h4>
-                    <h1>{postData.title}</h1>
-                    <p>{postData.small_title}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="row">
-                <div className="col-md-12">
-                  <div
-                    className="post-image"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    {postData.image && (
-                      <img
-                        src={`${baseuri}/${postData.image}`}
-                        alt={postData.title}
-                      />
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className="post-full-content"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
+      <div className="post-view-bg">
+        <div className="post-view-area">
+          <section>
+            <div className="post-top-area">
+              <div className="container">
                 <div className="row justify-content-center">
-                  <div className="col-md-8">
-                    <div className="post-full-content-inner">
-                      <div
-                        className=""
-                        dangerouslySetInnerHTML={{
-                          __html: postData.description,
-                        }}
-                      ></div>
-                    </div>
+                  <div className="col-md-9">
+                    <div
+                      className="blog-post-content"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    >
+                      <img src="/favicon.svg" alt="" className="page-head-img" />
 
-                    <div className="share-link">
-                      <ul className="share-ul">
-                        <li>
-                          <a className="share-link" onClick={copyToClipboard}>
-                            <i className="fa-regular fa-copy"></i>
-                            <span>{copyText}</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                              currentUrl
-                            )}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="share-link"
-                          >
-                            <i className="fa-brands fa-x-twitter"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                              currentUrl
-                            )}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="share-link"
-                          >
-                            <i className="fa-brands fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                              currentUrl
-                            )}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="share-link"
-                          >
-                            <i className="fa-brands fa-linkedin"></i>
-                          </a>
-                        </li>
-                      </ul>
+                      <h4>
+                        Published{" "}
+                        {new Date(postData.created_at).toLocaleDateString(
+                          "en-US",
+                          {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric",
+                          }
+                        )}
+                      </h4>
+                      <h1>{postData.title}</h1>
+                      <p>{postData.small_title}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="col-md-12">
+                    <div
+                      className="post-image"
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
+                    >
+                      {postData.image && (
+                        <img
+                          src={`${baseuri}/${postData.image}`}
+                          alt={postData.title}
+                        />
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="post-full-content"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <div className="row justify-content-center">
+                    <div className="col-md-8">
+                      <div className="post-full-content-inner">
+                        <div
+                          className=""
+                          dangerouslySetInnerHTML={{
+                            __html: postData.description,
+                          }}
+                        ></div>
+                      </div>
+
+                      <div className="share-link">
+                        <ul className="share-ul">
+                          <li>
+                            <a className="share-link" onClick={copyToClipboard}>
+                              <i className="fa-regular fa-copy"></i>
+                              <span>{copyText}</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                                currentUrl
+                              )}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="share-link"
+                            >
+                              <i className="fa-brands fa-x-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                                currentUrl
+                              )}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="share-link"
+                            >
+                              <i className="fa-brands fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                                currentUrl
+                              )}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="share-link"
+                            >
+                              <i className="fa-brands fa-linkedin"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        <Carbon />
       </div>
-      <Carbon />
+
     </div>
   );
 }
