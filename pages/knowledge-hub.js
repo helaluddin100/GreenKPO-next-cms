@@ -2,12 +2,12 @@ import { useState } from "react";
 import AppLayout from "../component/Layout/Layout";
 import Head from "next/head";
 import Carbon from "./components/carbon";
-
 import useSWR from "swr";
 import axios from "axios";
 import Link from "next/link";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data);
+
 function KnowledgeHub() {
   const baseuri = process.env.NEXT_PUBLIC_BACKEND_URL;
 
@@ -40,12 +40,30 @@ function KnowledgeHub() {
 
   console.log("Last Post:", lastPost);
   console.log("Posts:", posts);
+
+  const totalPages = Math.ceil(posts.total / posts.per_page);
+
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(
+        <button
+          key={i}
+          className={"page-count" + (page === i ? " active" : "")}
+          onClick={() => setPage(i)}
+        >
+          {i}
+        </button>
+      );
+    }
+    return pageNumbers;
+  };
+
   return (
     <>
       <Head>
         <title>Green KPO Next.js website</title>
         <meta property="og:site_name" content="Green KPO"></meta>
-
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="" />
         <link rel="canonical" href="" />
@@ -71,7 +89,6 @@ function KnowledgeHub() {
                 <div className="col-md-8">
                   <div className="section-title-center py-56">
                     <img src="/favicon.svg" alt="" className="page-head-img" />
-
                     <h4>Our blog</h4>
                     <h2>Resources and insights</h2>
                     <p>
@@ -86,7 +103,6 @@ function KnowledgeHub() {
         </section>
 
         {/* latest blog */}
-
         <section>
           <div
             className="last-news"
@@ -108,11 +124,9 @@ function KnowledgeHub() {
                     <div className="last-blog-content">
                       <Link href={`/post/${lastPost.slug}`}>
                         <a className="last-post-title">
-                          <span>
-                            {lastPost.title.length > 50
-                              ? `${lastPost.title.slice(0, 50)}...`
-                              : lastPost.title}
-                          </span>
+                          {lastPost.title > 40
+                            ? `${lastPost.title.slice(0, 40)}...`
+                            : lastPost.title}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="25"
@@ -232,14 +246,19 @@ function KnowledgeHub() {
                   ))}
                 </div>
 
-                <div>
+                <div className="pagination">
                   <button
+                    className={"page-btn" + (page === 1 ? " disabled" : "")}
                     onClick={() => setPage((page) => Math.max(page - 1, 1))}
                     disabled={page === 1}
                   >
                     Previous
                   </button>
+                  {renderPageNumbers()}
                   <button
+                    className={
+                      "page-btn" + (posts.next_page_url ? "" : " disabled")
+                    }
                     onClick={() => setPage((page) => page + 1)}
                     disabled={!posts.next_page_url}
                   >
