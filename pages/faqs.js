@@ -38,7 +38,7 @@ function Faq() {
                     <h2> Frequently asked questions </h2>
                     <p> Have questions ? We’ re here to help. </p>
                   </div>
-                  <div className="search-box-wrapper">
+                  {/* <div className="search-box-wrapper">
                     <form action="">
                       <div className="search-input">
                         <i className="fa-solid fa-magnifying-glass"> </i>
@@ -49,7 +49,7 @@ function Faq() {
                         />
                       </div>
                     </form>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
