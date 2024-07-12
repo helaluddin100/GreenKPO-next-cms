@@ -73,7 +73,7 @@ function Header() {
                       </a>
                     </Link>
                   </li>
-                  <li className={`nav-list ${isActive("/contact-us")}`}>
+                  <li className={`nav-list ${isActive("/faqs#contact")}`}>
                     <Link href="/faqs/#contact">
                       <a>
                         <span>Contact Us</span>
