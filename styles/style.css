@@ -1326,3 +1326,6 @@ li.nav-list.active::after {
     -ms-transition: .3s;
     -o-transition: .3s;
 }
+.product-details-content ul{
+    padding-left: 19px;
+}
