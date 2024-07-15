@@ -1241,7 +1241,7 @@ ul.product-details-list {
 .product-page-wrapper{
     background-image: url(../public/assets/img/bgmap/product-bg.png);
     background-repeat: repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 

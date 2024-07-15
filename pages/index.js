@@ -72,7 +72,7 @@ function Home() {
                   <div className="hero-content">
                     <img src="/favicon.svg" alt="" className="hero-icon" />
                     <h1 data-aos="fade-up" data-aos-duration="1000">
-                      {settings.banner_title_a} <br />{" "}
+                      {settings.banner_title_a} <br />
                       <a href="#"> {settings.banner_title_b}</a>
                     </h1>
                     <p data-aos="fade-up" data-aos-duration="1500">
@@ -85,12 +85,12 @@ function Home() {
                       data-aos-duration="1500"
                     >
                       {/* <button className="video-btn">
-                        <i className="fa-regular fa-circle-play"></i>{" "}
+                        <i className="fa-regular fa-circle-play"></i>
                         <span>Watch Demo</span>
                       </button> */}
 
                       <a href="#" className="custom-btn" onClick={handleShow}>
-                        <i className="fa-regular fa-circle-play"></i>{" "}
+                        <i className="fa-regular fa-circle-play"></i>
                         <span>Watch Demo</span>
                       </a>
 
@@ -158,7 +158,7 @@ function Home() {
                           <h3>Analyze Preparedness</h3>
                           <p>
                             it all comes down to data and it's accuracy. Let us
-                            help you.{" "}
+                            help you.
                           </p>
                           <a href="">
                             <span>Learn more</span>
@@ -247,7 +247,7 @@ function Home() {
                           <h3>Analyze Preparedness</h3>
                           <p>
                             it all comes down to data and it's accuracy. Let us
-                            help you.{" "}
+                            help you.
                           </p>
                           <a href="">
                             <span>Learn more</span>
