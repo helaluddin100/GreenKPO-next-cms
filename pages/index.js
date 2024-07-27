@@ -142,7 +142,7 @@ function Home() {
                       <div className="democrati-content-title">
                         <h4 className="sm-title">You too can start NOW!</h4>
                         <h2>
-                          Businesses with <a href="">0-10 employees</a> who want
+                          Businesses with <a>0-10 employees</a> who want
                           to kickstart their Carbon reporting journey
                         </h2>
                         <p>
@@ -160,10 +160,12 @@ function Home() {
                             it all comes down to data and it's accuracy. Let us
                             help you.
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
 
                         <li>
@@ -172,10 +174,12 @@ function Home() {
                             There are multiple protocols, know which one suits
                             best your business. We can help!
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
 
                         <li>
@@ -185,10 +189,12 @@ function Home() {
                             helps you take the first steps in your Carbon
                             Accounting journey
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -249,10 +255,12 @@ function Home() {
                             it all comes down to data and it's accuracy. Let us
                             help you.
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
 
                         <li>
@@ -261,10 +269,12 @@ function Home() {
                             There are multiple protocols, know which one suits
                             best your business. We can help!
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
 
                         <li>
@@ -274,10 +284,12 @@ function Home() {
                             responsibilities or hire a new resource. We can be
                             your ESG management arm too!
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
 
                         <li>
@@ -287,10 +299,12 @@ function Home() {
                             helps you take the first steps in your Carbon
                             Accounting journey
                           </p>
-                          <a href="">
-                            <span>Learn more</span>
-                            <i className="fa-solid fa-arrow-right-long"></i>
-                          </a>
+                          <Link href={'/product'}>
+                            <a >
+                              <span>Learn more</span>
+                              <i className="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -361,9 +375,11 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <a href="" class="main-custom-btn">
-                              <span>Click to Connect</span>
-                            </a>
+                            <Link href={'/faqs/#contact'}>
+                              <a class="main-custom-btn">
+                                <span>Click to Connect</span>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -386,9 +402,11 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <a href="" class="main-custom-btn">
-                              <span>Click to Connect</span>
-                            </a>
+                            <Link href={'/faqs/#contact'}>
+                              <a class="main-custom-btn">
+                                <span>Click to Connect</span>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -411,9 +429,12 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <a href="" class="main-custom-btn">
-                              <span>Click to Connect</span>
-                            </a>
+                            <Link href={'/faqs/#contact'}>
+
+                              <a class="main-custom-btn">
+                                <span>Click to Connect</span>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -436,9 +457,12 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <a href="" class="main-custom-btn">
-                              <span>Click to Connect</span>
-                            </a>
+                            <Link href={'/faqs/#contact'}>
+
+                              <a class="main-custom-btn">
+                                <span>Click to Connect</span>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

@@ -83,7 +83,7 @@ function About() {
               <div className="row">
                 <div className="col-md-12">
                   <div className="about-full-content">
-                    <h2>Our Story</h2>
+                    <h2>Democratisation is the Need of the Hour</h2>
                     <p>
                       Given the push-pull effect created by governments demanding
                       compliance and consumers preferring sustainable

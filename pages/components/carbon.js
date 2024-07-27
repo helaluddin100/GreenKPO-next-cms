@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Carbon() {
@@ -23,12 +24,16 @@ function Carbon() {
                                 </div>
                                 <div className="col-md-5">
                                     <div className="carbon-btn">
-                                        <a href="" className="main-custom-btn-alt">
-                                            <span>Know How</span>
-                                        </a>
-                                        <a href="" className="main-custom-btn">
-                                            <span>Get started</span>
-                                        </a>
+                                        <Link href={'product'}>
+                                            <a className="main-custom-btn-alt">
+                                                <span>Know How</span>
+                                            </a>
+                                        </Link>
+                                        <Link href={'/faqs/#contact'}>
+                                            <a className="main-custom-btn">
+                                                <span>Get started</span>
+                                            </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

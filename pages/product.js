@@ -117,7 +117,7 @@ function Product() {
         <section>
           <div className="plateform">
             <div className="container">
-              <div className="row">
+              <div className="row justify-content-center">
                 <div className="col-md-9">
                   <div
                     className="product-page-title"
