@@ -125,7 +125,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="team-wrapper">
+              {/* <div className="team-wrapper">
                 <div className="row">
                   <div className="col-md-6 col-lg-4">
                     <div className="team-card">
@@ -429,7 +429,7 @@ function About() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
