@@ -1329,3 +1329,9 @@ li.nav-list.active::after {
 .product-details-content ul{
     padding-left: 19px;
 }
+
+.hero-button{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}

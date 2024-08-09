@@ -21,7 +21,7 @@ function Footer() {
               </div>
               <div className="col-md-8">
                 <div className="row">
-                  <div className="col-md-4">
+                  {/* <div className="col-md-6">
                     <div className="footer-menu-wrapper">
                       <h4>Product</h4>
                       <ul className="footer-menu">
@@ -42,29 +42,25 @@ function Footer() {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="col-md-4">
+                  <div className="col-md-6">
                     <div className="footer-menu-wrapper">
                       <h4>Company</h4>
                       <ul className="footer-menu">
                         <li className="footer-li">
-                          <Link href="/#product" passHref>
+                          <Link href="/about/#ourStory" passHref>
                             <a>Our Story</a>
                           </Link>
                         </li>
+
                         <li className="footer-li">
-                          <Link href="/#product" passHref>
-                            <a>Careers</a>
-                          </Link>
-                        </li>
-                        <li className="footer-li">
-                          <Link href="/#product" passHref>
+                          <Link href="/about" passHref>
                             <a>Why Us</a>
                           </Link>
                         </li>
                         <li className="footer-li">
-                          <Link href="/#product" passHref>
+                          <Link href="/faqs/#contact" passHref>
                             <a>Contact</a>
                           </Link>
                         </li>
@@ -72,28 +68,24 @@ function Footer() {
                     </div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-6">
                     <div className="footer-menu-wrapper">
                       <h4>Knowledge Hub</h4>
                       <ul className="footer-menu">
                         <li className="footer-li">
-                          <Link href="/#product" passHref>
+                          <Link href="/knowledge-hub" passHref>
                             <a>Blog</a>
                           </Link>
                         </li>
+
                         <li className="footer-li">
-                          <Link href="/#product" passHref>
-                            <a>Articles</a>
+                          <Link href="/product" passHref>
+                            <a>Product</a>
                           </Link>
                         </li>
                         <li className="footer-li">
-                          <Link href="/#product" passHref>
-                            <a>Tutorials</a>
-                          </Link>
-                        </li>
-                        <li className="footer-li">
-                          <Link href="/#product" passHref>
-                            <a>Support</a>
+                          <Link href="/faqs" passHref>
+                            <a>Faqs</a>
                           </Link>
                         </li>
                       </ul>
@@ -125,21 +117,21 @@ function Footer() {
                         <i className="fa-brands fa-facebook"></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="">
                         <i className="fa-brands fa-github"></i>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="">
                         <i className="fa-brands fa-angellist"></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="">
                         <i className="fa-brands fa-dribbble"></i>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

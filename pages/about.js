@@ -23,8 +23,6 @@ function About() {
         <link rel="icon" type="image" href="/favicon.svg"></link>
       </Head>
       <div className="about-bg-wrapper">
-
-
         <div className="about-page-wrapper">
           <div className="container">
             <div className="row justify-content-center">
@@ -36,10 +34,12 @@ function About() {
                 >
                   <img src="/favicon.svg" alt="" className="page-head-img" />
                   <h4>Why we’re different</h4>
-                  <h2>Why do we need to <br /> democratise Carbon Accounting?</h2>
+                  <h2>
+                    Why do we need to <br /> democratise Carbon Accounting?
+                  </h2>
                   <p>
                     With more and more countries making Carbon scores mandatory
-                    for  businesses of all sizes, it's critical to have a
+                    for businesses of all sizes, it's critical to have a
                     platform that's made for everyone.
                   </p>
                 </div>
@@ -55,20 +55,32 @@ function About() {
                     data-aos-duration="1000"
                   >
                     <p>
-                      Carbon accounting quantifies the climate impact of an organization’s business.  Carbon accounting is essential for businesses to understand their environmental impact, meet reporting requirements, and identify opportunities for carbon reduction. These capabilities lay the foundation for the various business benefits. Many businesses are already required to disclose their carbon emissions – and legislative requirements are continuously increasing. Regulations like the Corporate Sustainability Reporting Directive (CSRD) in the EU and Streamlined Energy and Carbon Reporting (SECR) in the UK mandate emissions reporting for businesses of various sizes and across various sectors. This makes comprehensive carbon accounting a compliance necessity for businesses.
+                      Carbon accounting quantifies the climate impact of an
+                      organization’s business. Carbon accounting is essential
+                      for businesses to understand their environmental impact,
+                      meet reporting requirements, and identify opportunities
+                      for carbon reduction. These capabilities lay the
+                      foundation for the various business benefits. Many
+                      businesses are already required to disclose their carbon
+                      emissions – and legislative requirements are continuously
+                      increasing. Regulations like the Corporate Sustainability
+                      Reporting Directive (CSRD) in the EU and Streamlined
+                      Energy and Carbon Reporting (SECR) in the UK mandate
+                      emissions reporting for businesses of various sizes and
+                      across various sectors. This makes comprehensive carbon
+                      accounting a compliance necessity for businesses.
                     </p>
                     <p>
-                      However, there are benefits beyond just compliance for businesses to start their carbon accounting journey; like minimising risks, reducing inefficiency and building brand equity.
+                      However, there are benefits beyond just compliance for
+                      businesses to start their carbon accounting journey; like
+                      minimising risks, reducing inefficiency and building brand
+                      equity.
                     </p>
-
                   </div>
                 </div>
 
                 <div className="col-md-12">
-                  <div
-                    className="about-image"
-
-                  >
+                  <div className="about-image">
                     <AboutSlider />
                   </div>
                 </div>
@@ -85,8 +97,8 @@ function About() {
                   <div className="about-full-content">
                     <h2>Democratisation is the Need of the Hour</h2>
                     <p>
-                      Given the push-pull effect created by governments demanding
-                      compliance and consumers preferring sustainable
+                      Given the push-pull effect created by governments
+                      demanding compliance and consumers preferring sustainable
                       companies/brands/services, and the apprehension of Carbon
                       Accounting being a costly affair which tends to push small
                       and medium sized enterprises away, we at GreenKPO felt the
@@ -109,6 +121,7 @@ function About() {
         <section>
           <div
             className="team-section"
+            id="ourStory"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -453,8 +466,8 @@ function About() {
                       solutions.
                     </p>
                     <p>
-                      Concerned by climate change and the challenges it poses, we
-                      decided to research and learn more about the causes and
+                      Concerned by climate change and the challenges it poses,
+                      we decided to research and learn more about the causes and
                       changes needed.
                     </p>
                   </div>
@@ -471,9 +484,10 @@ function About() {
                   <div className="col-lg-11">
                     <div className="full-story-content">
                       <p>
-                        We saw how and where we could help which led us to create
-                        GreenKPO with the mission of empowering businesses to
-                        drive constructuve change in their carbon habits.
+                        We saw how and where we could help which led us to
+                        create GreenKPO with the mission of empowering
+                        businesses to drive constructuve change in their carbon
+                        habits.
                       </p>
                       <p>
                         We can apply our engineering skills to your data and
@@ -483,8 +497,8 @@ function About() {
                       </p>
                       <p>
                         We believe in the power of collective actions to address
-                        big problems and bringing necessary changes. Are you ready
-                        to join us?
+                        big problems and bringing necessary changes. Are you
+                        ready to join us?
                       </p>
                     </div>
                   </div>

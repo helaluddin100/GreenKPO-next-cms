@@ -117,12 +117,12 @@ function Contact() {
                           />
                         </svg>
                       </div>
-                      <h4> Live chat </h4>
+                      <h4> Live Chat (Coming Soon) </h4>
                       <p> Our friendly team is here to help. </p>
                       <a href="#"> Start new chat </a>
                     </div>
                   </div>
-                  <div className="col-sm-6">
+                  {/* <div className="col-sm-6">
                     <div className="contact-info-card">
                       <div className="contact-icon">
                         <svg
@@ -175,7 +175,7 @@ function Contact() {
                       <h4> Phone </h4> <p> Mon - Fri from 8 am to 5 pm. </p>
                       <a href="#"> +1(555) 000 - 0000 </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-md-6">

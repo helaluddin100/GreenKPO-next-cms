@@ -89,7 +89,11 @@ function Home() {
                         <span>Watch Demo</span>
                       </button> */}
 
-                      <a href="#" className="custom-btn" onClick={handleShow}>
+                      {/* <a href="#" className="custom-btn" onClick={handleShow}>
+                        <i className="fa-regular fa-circle-play"></i>
+                        <span>Watch Demo</span>
+                      </a> */}
+                      <a href="#" className="custom-btn hero-button">
                         <i className="fa-regular fa-circle-play"></i>
                         <span>Watch Demo</span>
                       </a>
@@ -142,8 +146,8 @@ function Home() {
                       <div className="democrati-content-title">
                         <h4 className="sm-title">You too can start NOW!</h4>
                         <h2>
-                          Businesses with <a>0-10 employees</a> who want
-                          to kickstart their Carbon reporting journey
+                          Businesses with <a>0-10 employees</a> who want to
+                          kickstart their Carbon reporting journey
                         </h2>
                         <p>
                           Running a small business isn't easy. Unlike bigger
@@ -160,8 +164,8 @@ function Home() {
                             it all comes down to data and it's accuracy. Let us
                             help you.
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -174,8 +178,8 @@ function Home() {
                             There are multiple protocols, know which one suits
                             best your business. We can help!
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -189,8 +193,8 @@ function Home() {
                             helps you take the first steps in your Carbon
                             Accounting journey
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -255,8 +259,8 @@ function Home() {
                             it all comes down to data and it's accuracy. Let us
                             help you.
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -269,8 +273,8 @@ function Home() {
                             There are multiple protocols, know which one suits
                             best your business. We can help!
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -284,8 +288,8 @@ function Home() {
                             responsibilities or hire a new resource. We can be
                             your ESG management arm too!
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -299,8 +303,8 @@ function Home() {
                             helps you take the first steps in your Carbon
                             Accounting journey
                           </p>
-                          <Link href={'/product'}>
-                            <a >
+                          <Link href={"/product"}>
+                            <a>
                               <span>Learn more</span>
                               <i className="fa-solid fa-arrow-right-long"></i>
                             </a>
@@ -375,7 +379,7 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <Link href={'/faqs/#contact'}>
+                            <Link href={"/faqs/#contact"}>
                               <a class="main-custom-btn">
                                 <span>Click to Connect</span>
                               </a>
@@ -402,7 +406,7 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <Link href={'/faqs/#contact'}>
+                            <Link href={"/faqs/#contact"}>
                               <a class="main-custom-btn">
                                 <span>Click to Connect</span>
                               </a>
@@ -429,8 +433,7 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <Link href={'/faqs/#contact'}>
-
+                            <Link href={"/faqs/#contact"}>
                               <a class="main-custom-btn">
                                 <span>Click to Connect</span>
                               </a>
@@ -457,8 +460,7 @@ function Home() {
                           </div>
 
                           <div className="reporting-email">
-                            <Link href={'/faqs/#contact'}>
-
+                            <Link href={"/faqs/#contact"}>
                               <a class="main-custom-btn">
                                 <span>Click to Connect</span>
                               </a>
