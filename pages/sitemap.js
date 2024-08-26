@@ -3,7 +3,7 @@ import { GetServerSideProps } from "next";
 const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
-  // Fetch static paths
+  // Fetch static paths (without /post prefix)
   const staticPaths = [
     "",
     "/about",
@@ -11,15 +11,15 @@ export const getServerSideProps = async ({ res }) => {
     "/product",
     "/faqs",
     "/knowledge-hub",
-    "/faqs#contact",
+    "/faqs/#contact",
   ];
 
   // Fetch dynamic paths from your API
   const response = await fetch("https://admin.greenkpo.com/api/posts");
   const { data: posts } = await response.json();
 
-  // Generate dynamic paths using the `slug` field
-  const dynamicPaths = posts.map((post) => `/${post.slug}`);
+  // Generate dynamic paths using the `slug` field (with /post prefix)
+  const dynamicPaths = posts.map((post) => `/post/${post.slug}`);
 
   // Combine static and dynamic paths
   const allPaths = [...staticPaths, ...dynamicPaths];
@@ -31,9 +31,9 @@ export const getServerSideProps = async ({ res }) => {
       .map((url) => {
         return `
           <url>
-            <loc>${`https://greenkpo.com/post${url}`}</loc>
+            <loc>${`https://greenkpo.com${url}`}</loc>
             <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
+            <priority>0.7</priority>
           </url>
         `;
       })
