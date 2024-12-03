@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   const Layout = Component.layout || Fragment;
   const router = useRouter();
   useEffect(() => {
-    TagManager.initialize({ gtmId: "G-WXNBYYH45D" });
+    TagManager.initialize({ gtmId: "G-JYYEFZ95M1" });
   }, []);
   useEffect(() => {
     import("react-facebook-pixel")
