@@ -24,7 +24,7 @@ ul.nav-ul {
 
 .mobile-toggle {
     font-size: 30px;
-    color: var(--black-color);
+    color: #ffffff;
     display: none;
 }
 
@@ -178,7 +178,7 @@ li.footer-li a {
     .nav-menu {
         position: fixed;
         width: 350px;
-        background: #f3f3f32e;
+        background: #00000096;
         top: 0;
         bottom: 0;
         z-index: 9;
